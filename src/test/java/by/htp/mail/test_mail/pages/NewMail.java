@@ -14,15 +14,22 @@ public class NewMail extends AbstractPage {
 
 	@FindBy(xpath = ".//textarea[@data-original-name='To']")
 	private WebElement inputTo;
+	
+	@FindBy(xpath = "(.//div[@class='b-correspondent__text'])[1]")
+	private WebElement foundedRecipientInList;
 
 	@FindBy(xpath = ".//input[@name='Subject']")
 	private WebElement inputSubject;
 
-	@FindBy(id = "tinymce")
+//	@FindBy(xpath = ".//iframe[@title='{#aria.rich_text_area}']")
+//	private WebElement inputText;
+	
+	@FindBy(xpath = ".//body[@id='tinymce']")
 	private WebElement inputText;
 
 	@FindBy(xpath = ".//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']/div[@data-title='Отправить (Ctrl+Enter)']")
 	private WebElement buttonSend;
+	
 
 	public NewMail(WebDriver driver) {
 		super(driver);
@@ -36,26 +43,29 @@ public class NewMail extends AbstractPage {
 
 	public void fillForms(String sender, String subject, String text) {
 		inputTo.sendKeys(sender);
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		foundedRecipientInList.click();
 		inputSubject.sendKeys(subject);
-
-//		WebElement el = driver.findElement(By.id("tinymce"));
-//
-//		driver.switchTo().frame(el);
-//		el.sendKeys(text);
-//		// inputText.click();
-//		// inputText.sendKeys(text);
-//		driver.switchTo().defaultContent();
 		
-	    driver.switchTo().frame("tinymce");
-	    WebElement body = driver.findElement(By.cssSelector("#tinymce"));
-	    body.clear();
-	    body.sendKeys("This is a test of the mce editor\n\nDarrell was here!\n");
+//		inputText.click();
+//		
+//		WebElement el = driver.findElement(By.xpath(".//iframe[@title='{#aria.rich_text_area}']"));
+////		WebElement el = driver.findElement(By.xpath(".//body[@id='tinymce']"));
+//		
+
+//			
+
+//		driver.switchTo().frame(inputText);
+//		inputText.sendKeys(text);
+		driver.switchTo().frame(0);
+		
+		try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+		
+		inputText.sendKeys(text);
+		driver.switchTo().defaultContent();
 	}
 
 	public void clickSend() {
