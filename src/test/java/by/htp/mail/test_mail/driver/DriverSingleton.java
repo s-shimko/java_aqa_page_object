@@ -8,9 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
     private static WebDriver driver;
-    private static final String WEBDRIVER_GECKO_DRIVER = "webdriver.chrome.driver";
-//    private static final String GECKODRIVER_GECKODRIVER_EXE_PATH = "D:\\Projects\\install\\geckodriver.exe";
-    private static final String GECKODRIVER_GECKODRIVER_EXE_PATH = "/home/dev/Downloads/install/chromedriver";
+    private static final String WEBDRIVER_GECKO_DRIVER = "webdriver.gecko.driver";
+    private static final String GECKODRIVER_GECKODRIVER_EXE_PATH = "D:\\Projects\\install\\geckodriver.exe";
+//    private static final String GECKODRIVER_GECKODRIVER_EXE_PATH = "/home/dev/Downloads/install/chromedriver";
 
     private DriverSingleton(){};
 
@@ -18,10 +18,10 @@ public class DriverSingleton {
     public static WebDriver getDriver(){
         if (null == driver){
             System.setProperty(WEBDRIVER_GECKO_DRIVER, GECKODRIVER_GECKODRIVER_EXE_PATH);
-//            driver = new FirefoxDriver();
-            driver = new ChromeDriver();
-            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver = new FirefoxDriver();
+//            driver = new ChromeDriver();
+            driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
             driver.manage().window().maximize();
         }
 

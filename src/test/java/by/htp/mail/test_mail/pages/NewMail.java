@@ -14,22 +14,21 @@ public class NewMail extends AbstractPage {
 
 	@FindBy(xpath = ".//textarea[@data-original-name='To']")
 	private WebElement inputTo;
-	
+
 	@FindBy(xpath = "(.//div[@class='b-correspondent__text'])[1]")
 	private WebElement foundedRecipientInList;
 
 	@FindBy(xpath = ".//input[@name='Subject']")
 	private WebElement inputSubject;
 
-//	@FindBy(xpath = ".//iframe[@title='{#aria.rich_text_area}']")
-//	private WebElement inputText;
-	
+	// @FindBy(xpath = ".//iframe[@title='{#aria.rich_text_area}']")
+	// private WebElement inputText;
+
 	@FindBy(xpath = ".//body[@id='tinymce']")
 	private WebElement inputText;
 
 	@FindBy(xpath = ".//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']/div[@data-title='Отправить (Ctrl+Enter)']")
 	private WebElement buttonSend;
-	
 
 	public NewMail(WebDriver driver) {
 		super(driver);
@@ -45,30 +44,19 @@ public class NewMail extends AbstractPage {
 		inputTo.sendKeys(sender);
 		foundedRecipientInList.click();
 		inputSubject.sendKeys(subject);
-		
-//		inputText.click();
-//		
-//		WebElement el = driver.findElement(By.xpath(".//iframe[@title='{#aria.rich_text_area}']"));
-////		WebElement el = driver.findElement(By.xpath(".//body[@id='tinymce']"));
-//		
 
-//			
-
-//		driver.switchTo().frame(inputText);
-//		inputText.sendKeys(text);
-		driver.switchTo().frame(0);
-		
-		try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		e.printStackTrace();
-	}
-		
+		driver.switchTo().frame(1);
 		inputText.sendKeys(text);
 		driver.switchTo().defaultContent();
 	}
 
 	public void clickSend() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		buttonSend.click();
 		assertTrue(isTextPresent("Ваше письмо отправлено. Перейти во Входящие"));
 	}
