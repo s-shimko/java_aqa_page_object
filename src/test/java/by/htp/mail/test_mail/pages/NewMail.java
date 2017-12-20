@@ -27,7 +27,7 @@ public class NewMail extends AbstractPage {
 	@FindBy(xpath = ".//body[@id='tinymce']")
 	private WebElement inputText;
 
-	@FindBy(xpath = ".//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']/div[@data-title='Отправить (Ctrl+Enter)']")
+	@FindBy(xpath = ".//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']")
 	private WebElement buttonSend;
 
 	public NewMail(WebDriver driver) {
@@ -47,12 +47,18 @@ public class NewMail extends AbstractPage {
 
 		driver.switchTo().frame(1);
 		inputText.sendKeys(text);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		driver.switchTo().defaultContent();
 	}
 
 	public void clickSend() {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

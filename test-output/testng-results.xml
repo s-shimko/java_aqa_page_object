@@ -2,34 +2,36 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54538" started-at="2017-12-18T21:49:59Z" finished-at="2017-12-18T21:50:54Z">
+  <suite name="Default suite" duration-ms="56818" started-at="2017-12-20T21:46:09Z" finished-at="2017-12-20T21:47:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54538" started-at="2017-12-18T21:49:59Z" finished-at="2017-12-18T21:50:54Z">
+    <test name="Default test" duration-ms="56818" started-at="2017-12-20T21:46:09Z" finished-at="2017-12-20T21:47:05Z">
       <class name="by.htp.mail.test_mail.MailTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="20222" started-at="2017-12-19T00:49:59Z" finished-at="2017-12-19T00:50:20Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="14648" started-at="2017-12-21T00:46:09Z" finished-at="2017-12-21T00:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="f" duration-ms="32922" started-at="2017-12-19T00:50:20Z" finished-at="2017-12-19T00:50:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="f()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="f" duration-ms="38898" started-at="2017-12-21T00:46:23Z" finished-at="2017-12-21T00:47:02Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Failed to find value field
+              <![CDATA[Unable to locate element: .//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5036, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 9efae3b6-37f4-4617-b879-ac7da5bdbbf7
-*** Element info: {Using=xpath, value=.//body[@id='tinymce']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6264, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 5148194b-c9a9-49ba-875f-5eaa54d6ae09
+*** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to find value field
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5036, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 9efae3b6-37f4-4617-b879-ac7da5bdbbf7
-*** Element info: {Using=xpath, value=.//body[@id='tinymce']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6264, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 5148194b-c9a9-49ba-875f-5eaa54d6ae09
+*** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,9 +48,9 @@ Session ID: 9efae3b6-37f4-4617-b879-ac7da5bdbbf7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at by.htp.mail.test_mail.pages.NewMail.fillForms(NewMail.java:49)
-	at by.htp.mail.test_mail.steps.Steps.sendMail(Steps.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at by.htp.mail.test_mail.pages.NewMail.clickSend(NewMail.java:66)
+	at by.htp.mail.test_mail.steps.Steps.sendMail(Steps.java:39)
 	at by.htp.mail.test_mail.MailTest.f(MailTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -77,11 +79,11 @@ Session ID: 9efae3b6-37f4-4617-b879-ac7da5bdbbf7
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="1307" started-at="2017-12-19T00:50:53Z" finished-at="2017-12-19T00:50:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="3227" started-at="2017-12-21T00:47:02Z" finished-at="2017-12-21T00:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
