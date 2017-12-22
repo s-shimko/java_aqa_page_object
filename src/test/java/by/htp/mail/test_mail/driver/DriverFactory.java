@@ -10,21 +10,23 @@ public class DriverFactory {
 		WebDriver driver = null;
 
 		if (type.equals("firefox")) {
-		    String WEBDRIVER = "webdriver.gecko.driver";
-		    String WEBDRIVER_EXE_PATH = "D:\\Projects\\install\\geckodriver.exe";
-            System.setProperty(WEBDRIVER, WEBDRIVER_EXE_PATH);
-			driver = new FirefoxDriver();
-			
+			driver = FirefoxInit.getFirefoxDriver();
+
 		} else if (type.equals("chrome")) {
-		    String WEBDRIVER = "webdriver.chrome.driver";
-		    String WEBDRIVER_EXE_PATH = "D:\\Projects\\install\\chromedriver.exe";
-            System.setProperty(WEBDRIVER, WEBDRIVER_EXE_PATH);
-			driver = new ChromeDriver();
-			
+			driver = getChromeDriver(driver);
+
 		} else {
 			System.out.println("Wrong driver name");
 		}
 
+		return driver;
+	}
+
+	public static WebDriver getChromeDriver(WebDriver driver) {
+		String WEBDRIVER = "webdriver.chrome.driver";
+		String WEBDRIVER_EXE_PATH = "D:\\Projects\\install\\chromedriver.exe";
+		System.setProperty(WEBDRIVER, WEBDRIVER_EXE_PATH);
+		driver = new ChromeDriver();
 		return driver;
 	}
 

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class NewMail extends AbstractPage {
+public class NewMailPage extends AbstractPage {
 
 	private final String BASE_URL = "https://e.mail.ru/compose/";
 
@@ -30,7 +30,7 @@ public class NewMail extends AbstractPage {
 	@FindBy(xpath = ".//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']")
 	private WebElement buttonSend;
 
-	public NewMail(WebDriver driver) {
+	public NewMailPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(this.driver, this);
 	}

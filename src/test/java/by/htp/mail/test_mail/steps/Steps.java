@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import by.htp.mail.test_mail.driver.DriverSingleton;
 import by.htp.mail.test_mail.pages.InBoxPage;
 import by.htp.mail.test_mail.pages.MainPage;
-import by.htp.mail.test_mail.pages.NewMail;
+import by.htp.mail.test_mail.pages.NewMailPage;
 
 public class Steps {
 	private WebDriver driver;
@@ -34,7 +34,7 @@ public class Steps {
 	}
 
 	public void sendMail(String sender, String subject, String text) {
-		NewMail newMail = new NewMail(driver);
+		NewMailPage newMail = new NewMailPage(driver);
 		newMail.fillForms(sender, subject, text);
 		newMail.clickSend();
 	}

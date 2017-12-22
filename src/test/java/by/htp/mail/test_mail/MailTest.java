@@ -23,7 +23,7 @@ public class MailTest {
 	private final String MAIL_TEXT = "Hello, World!";
 
 	@Test
-	public void f() {
+	public void MainTest() {
 		steps.loginMailRu(USERNAME, PASSWORD);
 		steps.startWriteLetter();
 		steps.sendMail(MAIL_SENDER, MAIL_SUBJECT, MAIL_TEXT);

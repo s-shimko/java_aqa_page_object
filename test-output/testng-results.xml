@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56818" started-at="2017-12-20T21:46:09Z" finished-at="2017-12-20T21:47:05Z">
+  <suite name="Default suite" duration-ms="150593" started-at="2017-12-22T18:40:07Z" finished-at="2017-12-22T18:42:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56818" started-at="2017-12-20T21:46:09Z" finished-at="2017-12-20T21:47:05Z">
+    <test name="Default test" duration-ms="150593" started-at="2017-12-22T18:40:07Z" finished-at="2017-12-22T18:42:38Z">
       <class name="by.htp.mail.test_mail.MailTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="14648" started-at="2017-12-21T00:46:09Z" finished-at="2017-12-21T00:46:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="36320" started-at="2017-12-22T21:40:07Z" finished-at="2017-12-22T21:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="f" duration-ms="38898" started-at="2017-12-21T00:46:23Z" finished-at="2017-12-21T00:47:02Z">
+        <test-method status="FAIL" signature="f()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="f" duration-ms="44135" started-at="2017-12-22T21:40:43Z" finished-at="2017-12-22T21:41:28Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: .//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']
@@ -19,8 +19,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6264, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5148194b-c9a9-49ba-875f-5eaa54d6ae09
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3772, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
 *** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}]]>
             </message>
             <full-stacktrace>
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6264, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5148194b-c9a9-49ba-875f-5eaa54d6ae09
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3772, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
 *** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -83,7 +83,7 @@ Session ID: 5148194b-c9a9-49ba-875f-5eaa54d6ae09
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="3227" started-at="2017-12-21T00:47:02Z" finished-at="2017-12-21T00:47:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="70073" started-at="2017-12-22T21:41:28Z" finished-at="2017-12-22T21:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
