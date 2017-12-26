@@ -2,43 +2,51 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="150593" started-at="2017-12-22T18:40:07Z" finished-at="2017-12-22T18:42:38Z">
+  <suite name="Default suite" duration-ms="50555" started-at="2017-12-26T22:17:35Z" finished-at="2017-12-26T22:18:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="150593" started-at="2017-12-22T18:40:07Z" finished-at="2017-12-22T18:42:38Z">
+    <test name="Default test" duration-ms="50555" started-at="2017-12-26T22:17:35Z" finished-at="2017-12-26T22:18:26Z">
       <class name="by.htp.mail.test_mail.MailTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="36320" started-at="2017-12-22T21:40:07Z" finished-at="2017-12-22T21:40:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="beforeMethod" is-config="true" duration-ms="10015" started-at="2017-12-27T01:17:35Z" finished-at="2017-12-27T01:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="f" duration-ms="44135" started-at="2017-12-22T21:40:43Z" finished-at="2017-12-22T21:41:28Z">
+        <test-method status="FAIL" signature="MainTest()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="MainTest" duration-ms="39403" started-at="2017-12-27T01:17:45Z" finished-at="2017-12-27T01:18:25Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: .//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//body[@id='tinymce']"}
+  (Session info: chrome=63.0.3239.108)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3772, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
-*** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\sss\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}
+Session ID: ba1385494df999769dbd01a5c1307c2b
+*** Element info: {Using=xpath, value=.//body[@id='tinymce']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//body[@id='tinymce']"}
+  (Session info: chrome=63.0.3239.108)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'SSS-ПК', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3772, moz:profile: C:\Users\sss\AppData\Local\..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
-*** Element info: {Using=xpath, value=.//div[@class='b-toolbar__item b-toolbar__item_ b-toolbar__item_false']//div[@data-title='Отправить (Ctrl+Enter)']}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\sss\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}
+Session ID: ba1385494df999769dbd01a5c1307c2b
+*** Element info: {Using=xpath, value=.//body[@id='tinymce']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
@@ -48,10 +56,10 @@ Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at by.htp.mail.test_mail.pages.NewMail.clickSend(NewMail.java:66)
-	at by.htp.mail.test_mail.steps.Steps.sendMail(Steps.java:39)
-	at by.htp.mail.test_mail.MailTest.f(MailTest.java:29)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at by.htp.mail.test_mail.pages.NewMailPage.fillForms(NewMailPage.java:49)
+	at by.htp.mail.test_mail.steps.Steps.sendMail(Steps.java:38)
+	at by.htp.mail.test_mail.MailTest.MainTest(MailTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,8 +90,8 @@ Session ID: 64d8d66a-e21a-43d0-85f3-82a2af17c990
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="70073" started-at="2017-12-22T21:41:28Z" finished-at="2017-12-22T21:42:38Z">
+        </test-method> <!-- MainTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:by.htp.mail.test_mail.MailTest@28feb3fa]" name="afterMethod" is-config="true" duration-ms="1081" started-at="2017-12-27T01:18:25Z" finished-at="2017-12-27T01:18:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
