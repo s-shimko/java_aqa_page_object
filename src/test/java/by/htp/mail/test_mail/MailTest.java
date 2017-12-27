@@ -14,10 +14,8 @@ import org.testng.annotations.AfterTest;
 public class MailTest {
 
 	private Steps steps;
-//	private final String USERNAME = "tathtp";
-//	private final String PASSWORD = "Klopik123";
-	private final String USERNAME = "my2m";
-	private final String PASSWORD = "brahman222";
+	private final String USERNAME = "tathtp";
+	private final String PASSWORD = "Klopik123";
 	private final String MAIL_SENDER = "sergey1shimko@gmail.com";
 	private final String MAIL_SUBJECT = "Selenium test task";
 	private final String MAIL_TEXT = "Hello, World!";

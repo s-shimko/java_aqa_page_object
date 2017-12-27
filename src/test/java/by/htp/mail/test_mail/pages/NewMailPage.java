@@ -7,11 +7,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NewMailPage extends AbstractPage {
 
 	private final String BASE_URL = "https://e.mail.ru/compose/";
 
+	private WebDriverWait wait;
+	
 	@FindBy(xpath = ".//textarea[@data-original-name='To']")
 	private WebElement inputTo;
 
@@ -46,24 +50,19 @@ public class NewMailPage extends AbstractPage {
 		inputSubject.sendKeys(subject);
 
 		driver.switchTo().frame(1);
-		inputText.sendKeys(text);
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
+		
+		wait = new WebDriverWait(driver, 10);
+		WebElement searchInput = wait.until(ExpectedConditions.elementToBeClickable(inputText));
+		searchInput.sendKeys(text);
+		
 		driver.switchTo().defaultContent();
 	}
 
 	public void clickSend() {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		wait = new WebDriverWait(driver, 10);
+		WebElement searchButtonSend = wait.until(ExpectedConditions.elementToBeClickable(buttonSend));
+		searchButtonSend.click();
 
-		buttonSend.click();
 		assertTrue(isTextPresent("Ваше письмо отправлено. Перейти во Входящие"));
 	}
 
